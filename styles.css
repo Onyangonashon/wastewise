@@ -20,7 +20,7 @@ html {
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgmzajF4PTkCbiNx45BeKLI_bL__7bwxVMtVTpm83xug&s">
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #24352b;
+    color: green;
     background: light green;
     line-height: 1.6;
 }
@@ -32,7 +32,7 @@ body {
 
 .header {
     background: green;
-    color: white;
+    color: blue;
     padding: 18px 5%;
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@ nav {
 
 
 nav a {
-    color: white;
+    color: green;
     text-decoration: none;
     padding: 9px 12px;
     border-radius: 7px;
@@ -82,7 +82,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background: #2f855a;
+    background: pink;
 }
 
 
@@ -97,7 +97,7 @@ nav a.active {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    background:
+    background: green;
         linear-gradient(135deg, #dff3e3, #f4f9ed);
 }
 
@@ -109,8 +109,8 @@ nav a.active {
 
 .badge {
     display: inline-block;
-    background: #d0ead7;
-    color: #21633f;
+    background: green;
+    color: blue;
     padding: 8px 14px;
     border-radius: 30px;
     font-size: 13px;
@@ -152,8 +152,8 @@ nav a.active {
     display: inline-block;
     padding: 14px 24px;
     border-radius: 8px;
-    background: #2f855a;
-    color: white;
+    background: green;
+    color: blue;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
@@ -161,20 +161,20 @@ nav a.active {
 
 
 .button:hover {
-    background: #1f633f;
+    background: green;
     transform: translateY(-2px);
 }
 
 
 .button-light {
-    background: white;
-    color: #21633f;
+    background: green;
+    color: blue;
     border: 2px solid #2f855a;
 }
 
 
 .button-light:hover {
-    background: #e6f4e9;
+    background: green;
 }
 
 
