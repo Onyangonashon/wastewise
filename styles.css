@@ -17,11 +17,10 @@ html {
     scroll-behavior: smooth;
 }
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgmzajF4PTkCbiNx45BeKLI_bL__7bwxVMtVTpm83xug&s">
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: green;
-    background: white;
+    background: navy blue;
     line-height: 1.6;
 }
 
