@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>WasteWise | Home</title>
-
+    <meta name="description" content="WasteWise helps communities reduce waste, sort properly, and build cleaner habits.">
     <link rel="stylesheet" href="styles.css">
-   <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,11 +14,11 @@
 <header class="header">
 
     <div class="logo">
-        <span>♻️</span>
+        <span aria-hidden="true">♻️</span>
         <h1>WasteWise</h1>
     </div>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="waste-types.html">Waste Types</a>
@@ -51,19 +50,17 @@
             </p>
 
             <div class="hero-buttons">
-                <a class="button" href="sorting.html">
-                    Start Sorting ♻️
-                </a>
-
-                <a class="button button-light" href="about.html">
-                    Learn More
-                </a>
+                <a class="button" href="sorting.html">Start Sorting ♻️</a>
+                <a class="button button-light" href="about.html">Learn More</a>
             </div>
 
         </div>
 
-        <div class="hero-art">
+        <div class="hero-art" aria-hidden="true">
             <div class="earth">🌍</div>
+            <div class="recycle-symbol">♻️</div>
+            <div class="leaf leaf-one">🍃</div>
+            <div class="leaf leaf-two">🌱</div>
         </div>
 
     </section>
@@ -84,7 +81,7 @@
         <div class="cards">
 
             <article class="card">
-                <div class="card-icon">🚮</div>
+                <div class="card-icon">🌍</div>
 
                 <h3>Protect Nature</h3>
 
@@ -148,7 +145,6 @@
 
 </main>
 
-
 <footer>
 
     <div class="footer-content">
@@ -162,7 +158,6 @@
 
         <div>
             <h3>Quick Links</h3>
-
             <a href="about.html">About</a>
             <a href="sorting.html">Sorting</a>
             <a href="reuse.html">Reuse</a>
@@ -175,6 +170,6 @@
         <p>© 2026 WasteWise | Better Waste Management</p>
     </div>
 </footer>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUT9OKeoAFwxjVL09oHWV2G2kb5XCyXSK2JPcrNmmJWw&s=10">
+
 </body>
 </html>
