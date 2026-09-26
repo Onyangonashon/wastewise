@@ -20,7 +20,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: blue;
-    background: navy blue;
+    background:  blue;
     line-height: 1.6;
 }
 
@@ -69,7 +69,7 @@ nav {
 
 
 nav a {
-    color: green;
+    color: blue;
     text-decoration: none;
     padding: 9px 12px;
     border-radius: 7px;
@@ -108,7 +108,7 @@ nav a.active {
 
 .badge {
     display: inline-block;
-    background: green;
+    background: chokolet;
     color: blue;
     padding: 8px 14px;
     border-radius: 30px;
@@ -151,7 +151,7 @@ nav a.active {
     display: inline-block;
     padding: 14px 24px;
     border-radius: 8px;
-    background: green;
+    background: broun;
     color: blue;
     text-decoration: none;
     font-weight: bold;
@@ -166,7 +166,7 @@ nav a.active {
 
 
 .button-light {
-    background: green;
+    background: pink;
     color: blue;
     border: 2px solid #2f855a;
 }
