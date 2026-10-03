@@ -1,4 +1,4 @@
-```css
+
 /* =========================================================
    WASTEWISE
    MODERN ECO-FRIENDLY STYLESHEET
@@ -19,7 +19,7 @@ html {
 body {
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     color: #26382d;
-    background: #f7faf7;
+    background: #eaf6ff;
     line-height: 1.7;
     overflow-x: hidden;
 }
@@ -123,8 +123,8 @@ nav a.active {
     position: relative;
     overflow: hidden;
     background:
-        radial-gradient(circle at 85% 20%, rgba(120, 184, 133, 0.18), transparent 30%),
-        linear-gradient(135deg, #f0f9f2, #fbfdf8);
+        radial-gradient(circle at 85% 20%, rgba(120, 190, 230, 0.18), transparent 30%),
+        linear-gradient(135deg, #eaf6ff, #f7fcff);
 }
 
 .hero::before {
@@ -368,6 +368,9 @@ nav a.active {
 .card:hover {
     transform: translateY(-9px);
     box-shadow: 0 20px 40px rgba(18, 59, 42, 0.13);
+}
+.card {
+    background: #ffffff;
 }
 
 .card:hover::before {
