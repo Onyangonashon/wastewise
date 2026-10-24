@@ -943,4 +943,202 @@ body.contact-page {
     min-height: 400px;
 }
 
+/* ===== WASTEWISE CONTACT PAGE: DESIGN FIX ===== */
+
+body.contact-page {
+    margin: 0;
+    background: #f1f7ef;
+    color: #183c30;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Nature hero */
+body.contact-page .contact-hero {
+    max-width: 1250px;
+    margin: 25px auto;
+    padding: 80px 55px;
+    min-height: 330px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    color: white;
+
+    background:
+        linear-gradient(90deg, rgba(5, 55, 37, .88), rgba(5, 55, 37, .25)),
+        url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&q=85")
+        center / cover no-repeat;
+}
+
+body.contact-page .contact-hero h2 {
+    max-width: 700px;
+    font-size: clamp(32px, 5vw, 58px);
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+body.contact-page .contact-hero h2 span {
+    display: block;
+    color: #a8f0b8;
+}
+
+body.contact-page .contact-hero p {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+/* Two-column contact layout */
+body.contact-page .contact-section {
+    max-width: 1150px;
+    margin: 60px auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 40px;
+    align-items: start;
+    box-sizing: border-box;
+}
+
+/* Contact information cards */
+body.contact-page .contact-info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    margin: 16px 0;
+    background: white;
+    border: 1px solid #dceadd;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(15, 70, 40, .08);
+}
+
+body.contact-page .contact-icon {
+    min-width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: #e0f5e5;
+    font-size: 23px;
+}
+
+body.contact-page .contact-info-card p {
+    color: #61766a;
+}
+
+body.contact-page .contact-info-card a {
+    color: #087b43;
+    overflow-wrap: anywhere;
+}
+
+/* Contact form */
+body.contact-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 30px;
+    background: white;
+    border: 1px solid #dceadd;
+    border-radius: 22px;
+    box-shadow: 0 14px 40px rgba(15, 70, 40, .10);
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+body.contact-page .form-heading {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+body.contact-page .form-heading h2 {
+    margin: 0;
+}
+
+body.contact-page .form-heading p {
+    color: #61766a;
+}
+
+body.contact-page .contact-form label {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+body.contact-page .contact-form input,
+body.contact-page .contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: 1px solid #cfdfd2;
+    border-radius: 10px;
+    background: #fbfefb;
+    color: #183c30;
+}
+
+body.contact-page .contact-form input:focus,
+body.contact-page .contact-form textarea:focus {
+    outline: 2px solid #159447;
+    outline-offset: 1px;
+}
+
+body.contact-page .send-message-button {
+    margin-top: 16px;
+    padding: 14px;
+    border: 0;
+    border-radius: 11px;
+    background: #128747;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+body.contact-page .form-note {
+    color: #61766a;
+    text-align: center;
+}
+
+/* Closing banner */
+body.contact-page .contact-cta {
+    margin: 45px auto;
+    padding: 40px 20px;
+    max-width: 1150px;
+    text-align: center;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #dff5e4, #bce8ca);
+    box-sizing: border-box;
+}
+
+body.contact-page .contact-cta a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: #128747;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Mobile screens */
+@media (max-width: 800px) {
+    body.contact-page .contact-hero {
+        margin: 15px;
+        padding: 45px 25px;
+    }
+
+    body.contact-page .contact-section {
+        grid-template-columns: 1fr;
+        margin: 35px auto;
+        gap: 25px;
+    }
+
+    body.contact-page .contact-form {
+        padding: 22px;
+    }
+
+    body.contact-page .contact-cta {
+        margin: 25px 15px;
+    }
+}
+
 ```
