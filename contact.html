@@ -1,24 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>WasteWise | Contact</title>
+    <title>Contact Us | WasteWise</title>
+    <meta name="description" content="Contact WasteWise with your questions, ideas, and suggestions for a cleaner environment.">
 
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
-<body>
+<body class="contact-page">
 
 <header class="header">
-
-    <div class="logo">
-        <span>♻️</span>
+    <a class="logo" href="index.html" aria-label="WasteWise home">
+        <span aria-hidden="true">♻</span>
         <h1>WasteWise</h1>
-    </div>
+    </a>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="waste-types.html">Waste Types</a>
@@ -26,159 +28,151 @@
         <a href="collection.html">Collection</a>
         <a href="reuse.html">Reuse</a>
         <a href="gallery.html">Gallery</a>
-        <a class="active" href="contact.html">Contact</a>
+        <a class="active" href="contact.html" aria-current="page">Contact</a>
     </nav>
-
 </header>
 
-
 <main>
-
-    <section class="page-banner">
-
-        <span>📩 GET IN TOUCH</span>
-
-        <h2>Contact WasteWise</h2>
-
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+        <span class="contact-eyebrow">LET'S MAKE A DIFFERENCE</span>
+        <h2>Let's Talk About a <span>Greener Future.</span></h2>
         <p>
-            Have a question or suggestion? Send us a message.
+            Have an idea, a question, or a suggestion?
+            We'd love to hear from you. Together, we can build
+            cleaner communities and better waste habits.
         </p>
 
+        <a href="#contact-details" class="contact-hero-button">
+            Get in Touch ↓
+        </a>
     </section>
 
+    <!-- CONTACT CONTENT -->
+    <section class="contact-section" id="contact-details">
 
-    <section class="content contact-layout">
-
-        <div class="contact-info">
-
-            <span class="section-label">CONTACT US</span>
-
-            <h2>We Would Love to Hear From You</h2>
-
+        <div class="contact-intro">
+            <span class="contact-label">CONTACT WASTEWISE</span>
+            <h2>Your Ideas Can Make a Difference</h2>
             <p>
-                Use the form to send a question, suggestion or
-                message about waste management.
+                Send us your questions or suggestions about recycling,
+                waste sorting, reuse, and protecting our environment.
             </p>
 
-
-            <div class="contact-item">
-
-                <span>📧</span>
-
+            <div class="contact-info-card">
+                <div class="contact-icon">✉</div>
                 <div>
-                    <h3>Email</h3>
-                    <p>info@wastewise.example</p>
+                    <h3>Email Us</h3>
+                    <p>Have a question or suggestion?</p>
+                    <a href="mailto:info@wastewise.example">
+                        info@wastewise.example
+                    </a>
                 </div>
-
             </div>
 
-
-            <div class="contact-item">
-
-                <span>🌍</span>
-
+            <div class="contact-info-card">
+                <div class="contact-icon">🌱</div>
                 <div>
-                    <h3>Environment</h3>
-                    <p>Working toward cleaner communities</p>
+                    <h3>Our Mission</h3>
+                    <p>Encourage responsible waste management and greener habits.</p>
                 </div>
-
             </div>
 
-
-            <div class="contact-item">
-
-                <span>♻️</span>
-
+            <div class="contact-info-card">
+                <div class="contact-icon">🌍</div>
                 <div>
-                    <h3>Our Goal</h3>
-                    <p>Reduce waste and encourage responsible habits</p>
+                    <h3>Our Vision</h3>
+                    <p>Cleaner surroundings and healthier communities for everyone.</p>
                 </div>
-
             </div>
-
         </div>
 
-
+        <!-- CONTACT FORM -->
         <form class="contact-form">
+            <div class="form-heading">
+                <span>✉</span>
+                <div>
+                    <h2>Send Us a Message</h2>
+                    <p>Fill in the details below.</p>
+                </div>
+            </div>
 
             <label for="name">Your Name</label>
-
             <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Enter your name"
+                placeholder="Enter your full name"
+                autocomplete="name"
                 required
             >
 
-
             <label for="email">Email Address</label>
-
             <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Enter your email"
+                placeholder="you@example.com"
+                autocomplete="email"
                 required
             >
 
-
             <label for="subject">Subject</label>
-
             <input
                 type="text"
                 id="subject"
                 name="subject"
-                placeholder="What is your message about?"
+                placeholder="What would you like to discuss?"
                 required
             >
 
-
-            <label for="message">Message</label>
-
+            <label for="message">Your Message</label>
             <textarea
                 id="message"
                 name="message"
-                rows="7"
+                rows="5"
                 placeholder="Write your message here..."
                 required
             ></textarea>
 
-
-            <button type="submit">
-                Send Message ♻️
+            <button type="submit" class="send-message-button">
+                Send Message <span aria-hidden="true">→</span>
             </button>
 
+            <p class="form-note">
+                Thank you for supporting a cleaner environment. ♻
+            </p>
         </form>
-
     </section>
 
+    <!-- CLOSING BANNER -->
+    <section class="contact-cta">
+        <span>♻</span>
+        <h2>Small Actions. Big Impact.</h2>
+        <p>Every responsible choice brings us closer to a cleaner planet.</p>
+        <a href="sorting.html">Learn to Sort Waste →</a>
+    </section>
 </main>
 
-
-<footer>
-
+<footer class="contact-footer">
     <div class="footer-content">
-
         <div>
-            <h3>♻️ WasteWise</h3>
+            <h3>♻ WasteWise</h3>
             <p>Better waste management for a cleaner future.</p>
         </div>
 
         <div>
             <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
             <a href="sorting.html">Sorting</a>
             <a href="collection.html">Collection</a>
-            <a href="reuse.html">Reuse</a>
             <a href="gallery.html">Gallery</a>
         </div>
-
     </div>
 
     <div class="copyright">
         <p>© 2026 WasteWise | Better Waste Management</p>
     </div>
-
 </footer>
 
 </body>
