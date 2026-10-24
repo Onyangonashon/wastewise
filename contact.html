@@ -45,18 +45,36 @@ form {
 
 /* Form sections */
 
+<<<<<<< HEAD
 fieldset {
   border: none;
   padding: 20px 0;
   margin: 0;
   border-bottom: 1px solid #dceadd;
 }
+=======
+    <!-- CONTACT CONTENT -->
+     <form class="contact-form" id="wastewiseContactForm"></form>
+>>>>>>> a04ecd0 (Save current WasteWise updates)
 
 fieldset:last-of-type {
   border-bottom: none;
 }
 
+<<<<<<< HEAD
 /* Labels */
+=======
+            <div class="contact-info-card">
+                <div class="contact-icon">✉</div>
+                <div>
+                    <h3>Email Us</h3>
+                    <p>Have a question or suggestion?</p>
+                    <a href="mailto:info@wastewise.com">
+                        info@wastewise.com
+                    </a>
+                </div>
+            </div>
+>>>>>>> a04ecd0 (Save current WasteWise updates)
 
 label {
   display: block;
@@ -85,6 +103,7 @@ select {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+<<<<<<< HEAD
 /* Highlight fields when selected */
 
 input:focus,
@@ -101,9 +120,48 @@ textarea {
   min-height: 140px;
   resize: vertical;
 }
+=======
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                	id="contactName"
+                name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                	id="contactEmail"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+            >
+
+            <label for="subject">Subject</label>
+            <input
+                type="text"
+                	id="contactSubject"
+                placeholder="What would you like to discuss?"
+                required
+            >
+
+            <label for="message">Your Message</label>
+            <textarea
+                	id="contactMessage"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+            ></textarea>
+>>>>>>> a04ecd0 (Save current WasteWise updates)
 
 /* Checkboxes and radio buttons */
 
+<<<<<<< HEAD
 .inline {
   display: inline-block;
   width: auto;
@@ -112,6 +170,14 @@ textarea {
   vertical-align: middle;
   accent-color: #218c4b;
 }
+=======
+            <p class="form-note">
+                Thank you for supporting a cleaner environment. ♻
+            </p>
+            <p id="contactFeedback" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+>>>>>>> a04ecd0 (Save current WasteWise updates)
 
 /* Submit button */
 

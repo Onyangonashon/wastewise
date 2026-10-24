@@ -112,5 +112,52 @@ if (quizForm) {
         }
 
     });
+const learnButtons = document.querySelectorAll(".learn-btn");
+
+learnButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const info = button.nextElementSibling;
+
+        if (info.textContent === "") {
+            info.textContent = button.dataset.info;
+            button.textContent = "Hide Information";
+        } else {
+            info.textContent = "";
+            button.textContent = "Learn More";
+        }
+    });
 
 }
+/* ===== WASTEWISE CONTACT FORM ===== */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("wastewiseContactForm");
+
+    if (!contactForm) {
+        return;
+    }
+
+    const feedback = document.getElementById("contactFeedback");
+    const nameInput = document.getElementById("contactName");
+
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!contactForm.checkValidity()) {
+            contactForm.reportValidity();
+            return;
+        }
+
+        const visitorName = nameInput.value.trim();
+
+        feedback.textContent =
+            `Thank you, ${visitorName}! 🌿 Your message has been checked successfully. This demonstration form does not send emails yet.`;
+
+        feedback.style.color = "#1b5e20";
+        feedback.style.backgroundColor = "#e8f5e9";
+        feedback.style.padding = "12px";
+        feedback.style.borderRadius = "8px";
+
+        contactForm.reset();
+    });
+});

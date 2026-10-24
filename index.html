@@ -132,7 +132,7 @@
                 </a>
 
             </article>
-
+<img>
 
             <article class="card">
 
@@ -182,9 +182,341 @@
     </section>
 
 </main>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>♻️ Waste Wise</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>♻️ Waste Wise</h1>
+        <p>Learn • Sort • Recycle • Protect 🌍</p>
+
+        <button id="themeBtn">🌙 Dark Mode</button>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#game">Sorting Game</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#gallery">Waste Gallery</a>
+        <a href="#search">Find My Bin</a>
+        <a href="#challenge">Challenge</a>
+    </nav>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="hero">
+
+            <h2>Welcome to Waste Wise 🌱</h2>
+
+            <p>
+                Learn how to sort waste correctly and help protect our planet.
+            </p>
+
+            <div class="stats">
+
+                <div>
+                    <strong id="score">0</strong>
+                    <span>Eco Points</span>
+                </div>
+
+                <div>
+                    <strong id="correct">0</strong>
+                    <span>Correct Sorts</span>
+                </div>
+
+                <div>
+                    <strong id="level">Beginner</strong>
+                    <span>Level</span>
+                </div>
+
+            </div>
+
+        </section>
 
 
+<<<<<<< HEAD
 <!-- FOOTER -->
+=======
+        <!-- SORTING GAME -->
+        <section id="game" class="card">
+
+            <h2>♻️ Waste Sorting Game</h2>
+
+            <p>Where should this item go?</p>
+
+            <div id="wasteItem">
+                🍌 Banana Peel
+            </div>
+
+            <div class="bins">
+
+                <button class="bin" data-bin="organic">
+                    🟢 Organic
+                </button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeaC0_G2bf1N1W6zX9I0IlCuvh-7EzPvDOtKmOWZu4Qw&s=10">
+                <button class="bin" data-bin="plastic">
+                    🔵 Plastic
+                </button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZmIZXqI6piGgjGLbsms77Xdb0B7EjDs3CkKDe637rjA&s=10">
+                <button class="bin" data-bin="paper">
+                    🟡 Paper
+                </button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sXI6ad0sLGBl_HPQuryUnpowM3VoGzyP6dJpClbQAw&s=10">
+                <button class="bin" data-bin="glass">
+                    🟣 Glass
+                </button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ-2BsIHhI9haat-UV_1UwyK8wTg_8cj8V7rtFk3mitg&s=10">
+                <button class="bin" data-bin="ewaste">
+                    🔴 E-Waste
+                </button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs3fqJ9gdsmCKJLFrfNb1SIG_GFadfy3rqxEjV4QQdeg&s=10">
+            </div>
+
+            <p id="gameMessage"></p>
+
+            <button id="nextItem">
+                ➡️ Next Item
+            </button>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quiz" class="card">
+
+            <h2>🧠 Recycling Quiz</h2>
+
+            <p id="question">
+                Which bin should a plastic bottle go into?
+            </p>
+
+            <div id="answers"></div>
+
+            <p id="quizMessage"></p>
+
+            <p>
+                Quiz Score:
+                <strong id="quizScore">0</strong>
+            </p>
+
+            <button id="nextQuestion">
+                Next Question ➡️
+            </button>
+
+        </section>
+
+
+        <!-- IMAGE GALLERY -->
+        <section id="gallery" class="gallery">
+
+            <h2>🖼️ Explore Different Types of Waste</h2>
+
+            <p>
+                Explore the different types of waste and learn how to handle them.
+            </p>
+
+            <div class="gallery-grid">
+
+                <!-- PLASTIC -->
+                <div class="waste-card">
+
+                    <img
+                        src="images/plastic.jpg"
+                        alt="Plastic waste">
+
+                    <h3>🥤 Plastic Waste</h3>
+
+                    <p>
+                        Plastic bottles and containers can often be collected
+                        and recycled.
+                    </p>
+
+                    <button
+                        class="learn-btn"
+                        data-info="Clean recyclable plastic should be placed in the appropriate recycling collection.">
+                        Learn More
+                    </button>
+
+                    <p class="info"></p>
+
+                </div>
+
+
+                <!-- PAPER -->
+                <div class="waste-card">
+
+                    <img
+                        src="images/paper.jpg"
+                        alt="Paper waste">
+
+                    <h3>📄 Paper Waste</h3>
+
+                    <p>
+                        Newspapers, cardboard and other clean paper products
+                        can often be recycled.
+                    </p>
+
+                    <button
+                        class="learn-btn"
+                        data-info="Keep paper and cardboard clean and dry before putting them into the appropriate recycling collection.">
+                        Learn More
+                    </button>
+
+                    <p class="info"></p>
+
+                </div>
+
+
+                <!-- GLASS -->
+                <div class="waste-card">
+
+                    <img
+                        src="images/glass.jpg"
+                        alt="Glass bottles">
+
+                    <h3>🍾 Glass Waste</h3>
+
+                    <p>
+                        Glass bottles and jars can be separated for recycling.
+                    </p>
+
+                    <button
+                        class="learn-btn"
+                        data-info="Separate glass bottles and jars and take them to the appropriate collection point.">
+                        Learn More
+                    </button>
+
+                    <p class="info"></p>
+
+                </div>
+
+
+                <!-- ORGANIC -->
+                <div class="waste-card">
+
+                    <img
+                        src="images/organic.jpg"
+                        alt="Organic food waste">
+
+                    <h3>🍌 Organic Waste</h3>
+
+                    <p>
+                        Food scraps and other biodegradable materials can
+                        be composted.
+                    </p>
+
+                    <button
+                        class="learn-btn"
+                        data-info="Food scraps, fruit peels and vegetable waste can be suitable for composting.">
+                        Learn More
+                    </button>
+
+                    <p class="info"></p>
+
+                </div>
+
+
+                <!-- E-WASTE -->
+                <div class="waste-card">
+
+                    <img
+                        src="images/ewaste.jpg"
+                        alt="Electronic waste">
+
+                    <h3>📱 E-Waste</h3>
+
+                    <p>
+                        Old phones, computers and electronic equipment need
+                        special handling.
+                    </p>
+
+                    <button
+                        class="learn-btn"
+                        data-info="Take electronic waste to an appropriate e-waste collection or recycling facility.">
+                        Learn More
+                    </button>
+
+                    <p class="info"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FIND MY BIN -->
+        <section id="search" class="card">
+
+            <h2>🔎 Find My Bin</h2>
+
+            <p>
+                Enter an item to find out where it belongs.
+            </p>
+
+            <input
+                type="text"
+                id="wasteSearch"
+                placeholder="Example: bottle, banana, phone">
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+            <div id="searchResult"></div>
+
+        </section>
+
+
+        <!-- DAILY CHALLENGE -->
+        <section id="challenge" class="card">
+
+            <h2>🌱 Today's Eco Challenge</h2>
+
+            <p id="challengeText">
+                Recycle at least 5 items today.
+            </p>
+
+            <button id="completeChallenge">
+                ✅ Complete Challenge
+            </button>
+
+            <p id="challengeMessage"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            ♻️ Waste Wise — Small actions, big impact. 🌍
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+>>>>>>> d905d6a (Save current WasteWise updates)
 <footer>
 
     <div class="footer-content">
@@ -234,7 +566,11 @@
     </div>
 
 </footer>
+<<<<<<< HEAD
 
 </body>
 </html>
 ```
+=======
+</html>
+>>>>>>> d905d6a (Save current WasteWise updates)
