@@ -482,4 +482,19 @@ nav a.active {
     min-height: 420px;
 }
 
+   
+body {
+    background-image:
+        linear-gradient(
+            rgba(247, 250, 247, 0.90),
+            rgba(247, 250, 247, 0.90)
+        ),
+        url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&q=85");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 ```
