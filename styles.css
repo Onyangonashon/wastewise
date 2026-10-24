@@ -1125,6 +1125,13 @@ body.contact-page .contact-cta a {
         margin: 15px;
         padding: 45px 25px;
     }
+    #recycle > img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
 
     body.contact-page .contact-section {
         grid-template-columns: 1fr;
