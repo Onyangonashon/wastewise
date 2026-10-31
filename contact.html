@@ -1,179 +1,74 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
 
-    <title>Contact Us | WasteWise</title>
-    <meta name="description" content="Contact WasteWise with your questions, ideas, and suggestions for a cleaner environment.">
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
 
-<body class="contact-page">
+fieldset:last-of-type {
+  border-bottom: none;
+}
 
-<header class="header">
-    <a class="logo" href="index.html" aria-label="WasteWise home">
-        <span aria-hidden="true">♻</span>
-        <h1>WasteWise</h1>
-    </a>
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
 
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="waste-types.html">Waste Types</a>
-        <a href="sorting.html">Sorting</a>
-        <a href="collection.html">Collection</a>
-        <a href="reuse.html">Reuse</a>
-        <a href="gallery.html">Gallery</a>
-        <a class="active" href="contact.html" aria-current="page">Contact</a>
-    </nav>
-</header>
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
 
-<main>
-    <!-- CONTACT HERO -->
-    <section class="contact-hero">
-        <span class="contact-eyebrow">LET'S MAKE A DIFFERENCE</span>
-        <h2>Let's Talk About a <span>Greener Future.</span></h2>
-        <p>
-            Have an idea, a question, or a suggestion?
-            We'd love to hear from you. Together, we can build
-            cleaner communities and better waste habits.
-        </p>
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
 
-        <a href="#contact-details" class="contact-hero-button">
-            Get in Touch ↓
-        </a>
-    </section>
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
 
-    <!-- CONTACT CONTENT -->
-    <section class="contact-section" id="contact-details">
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
 
-        <div class="contact-intro">
-            <span class="contact-label">CONTACT WASTEWISE</span>
-            <h2>Your Ideas Can Make a Difference</h2>
-            <p>
-                Send us your questions or suggestions about recycling,
-                waste sorting, reuse, and protecting our environment.
-            </p>
+input[type="file"] {
+  padding: 1px 2px;
+}
 
-            <div class="contact-info-card">
-                <div class="contact-icon">✉</div>
-                <div>
-                    <h3>Email Us</h3>
-                    <p>Have a question or suggestion?</p>
-                    <a href="mailto:info@wastewise.example">
-                        info@wastewise.example
-                    </a>
-                </div>
-            </div>
 
-            <div class="contact-info-card">
-                <div class="contact-icon">🌱</div>
-                <div>
-                    <h3>Our Mission</h3>
-                    <p>Encourage responsible waste management and greener habits.</p>
-                </div>
-            </div>
-
-            <div class="contact-info-card">
-                <div class="contact-icon">🌍</div>
-                <div>
-                    <h3>Our Vision</h3>
-                    <p>Cleaner surroundings and healthier communities for everyone.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- CONTACT FORM -->
-        <form class="contact-form">
-            <div class="form-heading">
-                <span>✉</span>
-                <div>
-                    <h2>Send Us a Message</h2>
-                    <p>Fill in the details below.</p>
-                </div>
-            </div>
-
-            <label for="name">Your Name</label>
-            <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your full name"
-                autocomplete="name"
-                required
-            >
-
-            <label for="email">Email Address</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="you@example.com"
-                autocomplete="email"
-                required
-            >
-
-            <label for="subject">Subject</label>
-            <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="What would you like to discuss?"
-                required
-            >
-
-            <label for="message">Your Message</label>
-            <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Write your message here..."
-                required
-            ></textarea>
-
-            <button type="submit" class="send-message-button">
-                Send Message <span aria-hidden="true">→</span>
-            </button>
-
-            <p class="form-note">
-                Thank you for supporting a cleaner environment. ♻
-            </p>
-        </form>
-    </section>
-
-    <!-- CLOSING BANNER -->
-    <section class="contact-cta">
-        <span>♻</span>
-        <h2>Small Actions. Big Impact.</h2>
-        <p>Every responsible choice brings us closer to a cleaner planet.</p>
-        <a href="sorting.html">Learn to Sort Waste →</a>
-    </section>
-</main>
-
-<footer class="contact-footer">
-    <div class="footer-content">
-        <div>
-            <h3>♻ WasteWise</h3>
-            <p>Better waste management for a cleaner future.</p>
-        </div>
-
-        <div>
-            <h3>Quick Links</h3>
-            <a href="index.html">Home</a>
-            <a href="sorting.html">Sorting</a>
-            <a href="collection.html">Collection</a>
-            <a href="gallery.html">Gallery</a>
-        </div>
-    </div>
-
-    <div class="copyright">
-        <p>© 2026 WasteWise | Better Waste Management</p>
-    </div>
-</footer>
-
-</body>
-</html>
