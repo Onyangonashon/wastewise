@@ -1,50 +1,133 @@
-1. Website Navigation Table
-No.	Navigation Link	Page
-1	Home	index.html
-2	About	about.html
-3	Waste Types	waste-types.html
-4	Sorting	sorting.html
-5	Collection	collection.html
-6	Reuse	reuse.html
-7	Gallery	gallery.html
-8	Contact	contact.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Collection | WasteWise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <!-- HEADER -->
+    <header>
+        <h1>♻️ WasteWise</h1>
+        <p>Better Waste Management for a Cleaner Future</p>
 
-2. Waste Collection Schedule
-Organize your waste and prepare it for collection.
-Collection Day	Waste Type	Examples of Waste	Image
-Monday	🧴 Plastic and Paper	Plastic bottles, paper, and cardboard	View Image
-Wednesday	🌱 Organic Waste	Food scraps, banana peels, and garden waste	View Image
-Friday	🍾 Glass and Metal	Glass containers and suitable metal items	View Image
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="waste-types.html">Waste Types</a>
+            <a href="sorting.html">Sorting</a>
+            <a href="collection.html">Collection</a>
+            <a href="reuse.html">Reuse</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
+    <!-- MAIN SECTION -->
+    <main class="collection-container">
 
-Note: This is an example schedule. Actual collection days and accepted materials depend on your local waste collection service.
-3. Waste Collection Guidelines
-No.	Guideline	Explanation
-1	Separate waste	Put different types of waste into the appropriate containers.
-2	Clean recyclable materials	Rinse suitable plastic, glass, and metal containers when necessary.
-3	Separate organic waste	Keep food scraps and suitable garden waste separate from recyclables.
-4	Prepare waste	Place waste in suitable containers before collection.
-5	Follow local rules	Check which materials your local collection service accepts.
+        <section class="collection-intro">
+            <h2>🚛 Waste Collection Schedule</h2>
+            <p>Organize your waste and prepare it for collection.</p>
+        </section>
 
+        <!-- COLLECTION TABLE -->
+        <section class="table-section">
+            <h2>📅 Weekly Collection Timetable</h2>
 
-4. Website Footer Table
-Section	Content
-Website Name	♻️ WasteWise
-Slogan	Better waste management for a cleaner future.
-Quick Link 1	Sorting
-Quick Link 2	Reuse
-Quick Link 3	Gallery
-Quick Link 4	Contact
-Copyright	© 2026 WasteWise
-Final Message	Better Waste Management
+            <div class="table-wrapper">
+                <table class="collection-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Waste Type</th>
+                            <th>Examples</th>
+                            <th>Collection Status</th>
+                        </tr>
+                    </thead>
 
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>🧴 Plastic & Paper</td>
+                            <td>Plastic bottles, paper and cardboard</td>
+                            <td><span class="collection-badge">Plastic & Paper</span></td>
+                        </tr>
 
-5. Summary of the WasteWise Collection Page
-Item	Details
-Project Name	WasteWise
-Main Page	Waste Collection
-Main Purpose	To help people organize and prepare waste for collection.
-Collection Days	Monday, Wednesday, and Friday
-Main Waste Categories	Plastic, paper, organic waste, glass, and metal
-Website Technologies	HTML, CSS, and JavaScript
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>🌱 Organic Waste</td>
+                            <td>Food scraps, banana peels and garden waste</td>
+                            <td><span class="collection-badge organic">Organic Waste</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Friday</td>
+                            <td>🍾 Glass & Metal</td>
+                            <td>Glass containers and suitable metal cans</td>
+                            <td><span class="collection-badge metal">Glass & Metal</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- COLLECTION GUIDELINES -->
+        <section class="collection-tips">
+            <h2>♻️ Collection Guidelines</h2>
+
+            <div class="tips-grid">
+                <article class="tip-card">
+                    <h3>🗑️ Separate Waste</h3>
+                    <p>Put different waste materials into the correct containers.</p>
+                </article>
+
+                <article class="tip-card">
+                    <h3>🧼 Clean Recyclables</h3>
+                    <p>Rinse suitable containers before recycling when necessary.</p>
+                </article>
+
+                <article class="tip-card">
+                    <h3>🌱 Manage Organic Waste</h3>
+                    <p>Keep food scraps and suitable garden waste separate.</p>
+                </article>
+
+                <article class="tip-card">
+                    <h3>📅 Check Collection Days</h3>
+                    <p>Confirm collection days with your local waste service.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- REMINDER -->
+        <section class="collection-reminder">
+            <h2>📌 Remember!</h2>
+            <p>
+                This is an example collection schedule. Actual collection days
+                and accepted materials depend on your local waste service.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="collection-footer">
+        <h2>♻️ WasteWise</h2>
+        <p>Better waste management for a cleaner future.</p>
+
+        <div class="footer-links">
+            <a href="sorting.html">Sorting</a>
+            <a href="reuse.html">Reuse</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p>&copy; 2026 WasteWise | Better Waste Management</p>
+    </footer>
+
+</body>
+</html>
+```
