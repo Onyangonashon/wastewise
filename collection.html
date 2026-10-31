@@ -1,309 +1,295 @@
-```css
-/* =========================================
-   ♻️ WASTEWISE — BEAUTIFUL COLLECTION PAGE
-========================================= */
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
+    <title>Waste Collection | WasteWise</title>
 
-/* Main page */
-.collection-container {
-    width: min(1100px, 92%);
-    margin: 0 auto;
-    padding: 45px 0;
-}
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="collection.css">
+</head>
 
-/* Beautiful introduction */
-.collection-intro {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    padding: 65px 25px;
-    margin: 10px auto 45px;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #d9fbe4, #a5e8bd, #f0fff4);
-    box-shadow: 0 12px 35px rgba(22, 101, 52, 0.15);
-    animation: fadeIn 0.9s ease;
-}
+<body>
 
-.collection-intro::before {
-    content: "♻️";
-    position: absolute;
-    top: -30px;
-    right: 20px;
-    font-size: 130px;
-    opacity: 0.10;
-    transform: rotate(15deg);
-}
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">♻️ WasteWise</a>
 
-.collection-intro h2 {
-    position: relative;
-    color: #14532d;
-    font-size: clamp(28px, 4vw, 42px);
-    margin-bottom: 15px;
-}
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="waste-types.html">Waste Types</a></li>
+                <li><a href="sorting.html">Sorting</a></li>
+                <li><a href="collection.html" class="active">Collection</a></li>
+                <li><a href="reuse.html">Reuse</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-.collection-intro p {
-    position: relative;
-    color: #365b43;
-    font-size: 18px;
-    line-height: 1.8;
-}
+    <main class="collection-container">
 
-/* Section headings */
-.table-section h2,
-.collection-tips h2 {
-    text-align: center;
-    color: #166534;
-    font-size: clamp(23px, 3vw, 30px);
-    margin-bottom: 28px;
-}
+        <!-- Introduction -->
+        <section class="collection-intro">
+            <span class="collection-tag">♻️ SMART WASTE MANAGEMENT</span>
 
-.table-section h2::after,
-.collection-tips h2::after {
-    content: "";
-    display: block;
-    width: 75px;
-    height: 4px;
-    background: #65a30d;
-    margin: 12px auto 0;
-    border-radius: 10px;
-}
+            <h1>Waste Collection Schedule</h1>
 
-/* Timetable container */
-.table-wrapper {
-    overflow-x: auto;
-    border-radius: 18px;
-    background: white;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
-    border: 1px solid #dcefe0;
-}
+            <p>
+                A cleaner community begins with responsible waste collection.
+                Discover our collection timetable, prepare your waste properly,
+                and join us in creating a greener future.
+            </p>
 
-/* Table */
-.collection-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: #ffffff;
-}
+            <a href="#collection-schedule" class="collection-button">
+                View Collection Schedule ↓
+            </a>
+        </section>
 
-.collection-table thead {
-    background: linear-gradient(135deg, #166534, #15803d);
-    color: white;
-}
+        <!-- Collection information cards -->
+        <section class="collection-overview">
 
-.collection-table th {
-    color: white;
-    padding: 22px 16px;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0.4px;
-}
+            <article class="overview-card">
+                <span class="overview-icon">🗓️</span>
+                <h3>Weekly Schedule</h3>
+                <p>Check the planned collection days for different waste categories.</p>
+            </article>
 
-.collection-table td {
-    padding: 23px 16px;
-    text-align: center;
-    line-height: 1.8;
-    border-bottom: 1px solid #e5eee7;
-    color: #37483b;
-}
+            <article class="overview-card">
+                <span class="overview-icon">♻️</span>
+                <h3>Sort Your Waste</h3>
+                <p>Separate recyclable materials from general and organic waste.</p>
+            </article>
 
-.collection-table tbody tr:nth-child(even) {
-    background: #f1faf3;
-}
+            <article class="overview-card">
+                <span class="overview-icon">🌍</span>
+                <h3>Protect Nature</h3>
+                <p>Responsible disposal helps keep our surroundings clean.</p>
+            </article>
 
-.collection-table tbody tr {
-    transition: background 0.3s ease;
-}
+        </section>
 
-.collection-table tbody tr:hover {
-    background: #d9fbe4;
-}
+        <!-- Collection timetable -->
+        <section class="table-section" id="collection-schedule">
 
-/* Collection labels */
-.collection-badge {
-    display: inline-block;
-    padding: 9px 14px;
-    background: #dcfce7;
-    color: #166534;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 13px;
-}
+            <div class="section-heading">
+                <span>YOUR WEEKLY PLAN</span>
+                <h2>Waste Collection Timetable</h2>
+                <p>Use this example schedule to organise your waste.</p>
+            </div>
 
-.collection-badge.organic {
-    background: #fef3c7;
-    color: #92400e;
-}
+            <div class="table-wrapper">
+                <table class="collection-table">
 
-.collection-badge.metal {
-    background: #dbeafe;
-    color: #1d4ed8;
-}
+                    <thead>
+                        <tr>
+                            <th>Collection Day</th>
+                            <th>Waste Category</th>
+                            <th>Examples</th>
+                            <th>Preparation</th>
+                        </tr>
+                    </thead>
 
-/* Collection guidelines */
-.collection-tips {
-    margin: 55px auto;
-}
+                    <tbody>
+                        <tr>
+                            <td><strong>Monday</strong></td>
+                            <td><span class="collection-badge">📄 Paper & Plastic</span></td>
+                            <td>Paper, cardboard, plastic bottles</td>
+                            <td>Keep items clean and dry.</td>
+                        </tr>
 
-.tips-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 25px;
-}
+                        <tr>
+                            <td><strong>Tuesday</strong></td>
+                            <td><span class="collection-badge organic">🍃 Organic Waste</span></td>
+                            <td>Fruit peels, vegetable scraps, leaves</td>
+                            <td>Use a suitable covered container.</td>
+                        </tr>
 
-.tip-card {
-    position: relative;
-    overflow: hidden;
-    padding: 30px 24px;
-    text-align: center;
-    background: linear-gradient(145deg, #ffffff, #f2fbf4);
-    border: 1px solid #d8ebdc;
-    border-radius: 20px;
-    box-shadow: 0 7px 22px rgba(22, 101, 52, 0.07);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+                        <tr>
+                            <td><strong>Wednesday</strong></td>
+                            <td><span class="collection-badge metal">🍾 Glass</span></td>
+                            <td>Glass bottles and jars</td>
+                            <td>Keep glass separate and handle carefully.</td>
+                        </tr>
 
-.tip-card::before {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 5px;
-    background: #65a30d;
-    border-radius: 10px;
-    margin: 0 auto 20px;
-}
+                        <tr>
+                            <td><strong>Thursday</strong></td>
+                            <td><span class="collection-badge">🥫 Metal</span></td>
+                            <td>Aluminium cans and suitable metal containers</td>
+                            <td>Empty containers before recycling.</td>
+                        </tr>
 
-.tip-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 30px rgba(22, 101, 52, 0.15);
-}
+                        <tr>
+                            <td><strong>Friday</strong></td>
+                            <td><span class="collection-badge organic">🗑️ General Waste</span></td>
+                            <td>Non-recyclable household rubbish</td>
+                            <td>Place waste in a securely closed bag.</td>
+                        </tr>
 
-.tip-card h3 {
-    color: #166534;
-    font-size: 21px;
-    margin-bottom: 13px;
-}
+                        <tr>
+                            <td><strong>Saturday</strong></td>
+                            <td><span class="collection-badge metal">🔌 Electronic Waste</span></td>
+                            <td>Old cables, small electronics</td>
+                            <td>Take items to an appropriate e-waste collection point.</td>
+                        </tr>
 
-.tip-card p {
-    color: #536457;
-    line-height: 1.9;
-}
+                    </tbody>
 
-/* Friendly reminder */
-.collection-reminder {
-    text-align: center;
-    padding: 30px 25px;
-    margin: 40px auto;
-    border-radius: 18px;
-    border: 1px solid #f3d68a;
-    border-left: 7px solid #eab308;
-    background: linear-gradient(135deg, #fffbeb, #fef3c7);
-    box-shadow: 0 7px 20px rgba(146, 64, 14, 0.07);
-}
+                </table>
+            </div>
 
-.collection-reminder h2 {
-    color: #92400e;
-    font-size: 25px;
-    margin-bottom: 13px;
-}
+            <p class="schedule-note">
+                <strong>Note:</strong> This is an example timetable for your
+                WasteWise project, not an official local collection schedule.
+                Follow your local waste service's collection days and instructions.
+            </p>
 
-.collection-reminder p {
-    color: #654b26;
-    line-height: 1.9;
-}
+        </section>
 
-/* Footer */
-.collection-footer {
-    text-align: center;
-    padding: 45px 20px;
-    color: white;
-    background: linear-gradient(135deg, #052e16, #166534, #14532d);
-}
+        <!-- Preparation tips -->
+        <section class="collection-tips">
 
-.collection-footer h2 {
-    font-size: 29px;
-    margin-bottom: 12px;
-}
+            <div class="section-heading">
+                <span>COLLECT RESPONSIBLY</span>
+                <h2>Prepare Your Waste</h2>
+                <p>Follow these simple steps before collection day.</p>
+            </div>
 
-.collection-footer p {
-    line-height: 1.8;
-}
+            <div class="tips-grid">
 
-.footer-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 22px;
-    margin: 25px 0;
-}
+                <article class="tip-card">
+                    <div class="tip-icon">🧹</div>
+                    <h3>1. Sort Your Waste</h3>
+                    <p>
+                        Separate paper, plastic, glass, metal, organic waste,
+                        and general rubbish into appropriate containers.
+                    </p>
+                </article>
 
-.footer-links a {
-    color: #dcfce7;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+                <article class="tip-card">
+                    <div class="tip-icon">🧴</div>
+                    <h3>2. Clean Recyclables</h3>
+                    <p>
+                        Empty bottles and containers, and follow local
+                        recycling instructions before placing them out.
+                    </p>
+                </article>
 
-.footer-links a:hover {
-    color: #bef264;
-}
+                <article class="tip-card">
+                    <div class="tip-icon">🗑️</div>
+                    <h3>3. Use Suitable Bins</h3>
+                    <p>
+                        Store waste in suitable containers with lids
+                        to discourage pests and prevent litter.
+                    </p>
+                </article>
 
-/* Entrance animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(18px);
-    }
+                <article class="tip-card">
+                    <div class="tip-icon">⏰</div>
+                    <h3>4. Check Collection Times</h3>
+                    <p>
+                        Follow your local collection service's instructions
+                        about when and where to put waste out.
+                    </p>
+                </article>
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+            </div>
 
-/* Mobile phones */
-@media (max-width: 650px) {
-    .collection-container {
-        width: 94%;
-        padding: 25px 0;
-    }
+        </section>
 
-    .collection-intro {
-        padding: 42px 18px;
-        border-radius: 18px;
-    }
+        <!-- Interactive checklist -->
+        <section class="collection-checklist">
 
-    .tips-grid {
-        grid-template-columns: 1fr;
-    }
+            <div class="section-heading">
+                <span>GET READY</span>
+                <h2>Collection Day Checklist</h2>
+                <p>Tick each task as you prepare your waste.</p>
+            </div>
 
-    .collection-table {
-        min-width: 650px;
-    }
+            <div class="checklist-box">
 
-    .collection-table th,
-    .collection-table td {
-        padding: 16px 12px;
-    }
+                <label class="checklist-item">
+                    <input type="checkbox">
+                    <span>Waste has been sorted into categories.</span>
+                </label>
 
-    .collection-reminder {
-        padding: 23px 17px;
-    }
+                <label class="checklist-item">
+                    <input type="checkbox">
+                    <span>Recyclable containers have been emptied.</span>
+                </label>
 
-    .footer-links {
-        gap: 16px;
-    }
-}
+                <label class="checklist-item">
+                    <input type="checkbox">
+                    <span>Waste is stored in suitable containers.</span>
+                </label>
 
-/* Respect reduced-motion preferences */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
+                <label class="checklist-item">
+                    <input type="checkbox">
+                    <span>I have checked the collection schedule.</span>
+                </label>
+
+                <div class="checklist-progress">
+                    <div class="progress-track">
+                        <div class="progress-fill" id="checklistProgress"></div>
+                    </div>
+
+                    <p id="checklistMessage" aria-live="polite">
+                        0 of 4 tasks completed.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Reminder -->
+        <section class="collection-reminder">
+
+            <span class="reminder-icon">💡</span>
+
+            <h2>Every Collection Counts!</h2>
+
+            <p>
+                Don't wait until rubbish piles up. Sort your waste,
+                follow your collection schedule, and help keep your
+                home and community clean.
+            </p>
+
+            <a href="sorting.html" class="collection-button">
+                Learn How to Sort Waste →
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="collection-footer">
+
+        <h2>♻️ WasteWise</h2>
+
+        <p>Recycle Today for a Better Tomorrow.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sorting.html">Sorting</a>
+            <a href="collection.html">Collection</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 WasteWise. Let's build a cleaner future together.
+        </p>
+
+    </footer>
+
+    <script src="collection.js"></script>
+
+</body>
+</html>
 ```
